@@ -7,5 +7,8 @@ module.exports = {
         mapboxgl: 'mapbox-gl',
       }),
     ],
+    devServer: {
+      proxy: process.env.VUE_APP_URL
+    }
   },
 }

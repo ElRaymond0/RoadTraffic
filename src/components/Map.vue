@@ -12,22 +12,22 @@
 </template>
 
 <script>
-import Mapbox from 'mapbox-gl-vue'
+import Mapbox from 'mapbox-gl-vue';
 
 export default {
   components: { Mapbox },
 
   data() {
       return {
-          key: process.env.VUE_APP_MAPBOX_KEY
+          key: process.env.VUE_APP_MAPBOX_KEY,
       }
-  }
+  },
 }
 </script>
 
 <style lang="scss" scoped>
-#map {
-  width: 100%;
-  height: 100vh;
-}
+    #map {
+        width: 100%;
+        height: 100vh;
+    }
 </style>
