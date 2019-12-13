@@ -38,7 +38,6 @@ export default {
   data() {
       return {
           key: process.env.VUE_APP_MAPBOX_KEY,
-          say: null,
       }
   },
 
@@ -67,7 +66,6 @@ export default {
 
    methods: {
      clicked(map, e) {
-       this.say = e.paint;
        this.$emit('popup', JSON.parse(e.features[0].properties.description));
      },
 
